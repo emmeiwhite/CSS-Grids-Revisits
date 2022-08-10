@@ -157,3 +157,28 @@ html {
 .main {
   grid-area: main;
 }
+
+/* Implicit vs Explicit Grids */
+
+.grid-container {
+  width: 1000px;
+  margin: 3rem auto;
+
+  background: rgb(255, 72, 0);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 2rem;
+
+  /* grid-auto-flow: column;
+  grid-auto-columns: 1fr; */
+}
+
+.grid-container > * {
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: blue;
+}
